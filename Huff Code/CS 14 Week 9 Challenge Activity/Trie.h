@@ -30,7 +30,6 @@ public:
     void AddToTable(char);
     void SortTable();
     void PrintTable();
-    void RemoveDuplicateHuffs();
     void PrintEncoding(string);
     Node* FindCharacter(char);
     

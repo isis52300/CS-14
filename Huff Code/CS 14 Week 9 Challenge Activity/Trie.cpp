@@ -109,12 +109,12 @@ void Trie::Encode() {
 void Trie::Encode(Node* curr, string huff) {
     
     if (curr == nullptr) {
+        if (huff.size() > 0) { huff.resize(huff.size() - 1); }
         return;
     }
     
     Encode(curr->Left(), huff + "0");
     curr->SetHuff(huff);
-    if (huff.size() > 0) { huff.resize(huff.size() - 1); }
     Encode(curr->Right(), huff + "1");
     
 }
@@ -157,13 +157,3 @@ void Table::PrintTable() {
     }
 }
 
-void Table::RemoveDuplicateHuffs() {
-    
-    for (list<Node*>::iterator it = table.begin(); it != table.end(); ++it) {
-        for (list<Node*>::iterator jit = it++; jit != table.end(); ++jit) {
-            if ((*it)->Huff() == (*jit)->Huff()) {
-                (*jit)->SetHuff((*jit)->Huff() + "!");
-            }
-        }
-    }
-}

@@ -68,7 +68,6 @@ int main() {
     
     T.Encode();
     
-    //t.RemoveDuplicateHuffs();
     
     cout << endl;
     t.PrintEncoding(test);

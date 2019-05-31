@@ -47,7 +47,7 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
       useCustomWorkingDirectory = "YES"
-      customWorkingDirectory = "/Users/isisdumas/Downloads/CS 14 Week 9 Challenge Activity/CS 14 Week 9 Challenge Activity"
+      customWorkingDirectory = "/Users/isisdumas/Desktop/CS-14/Huff Code/CS 14 Week 9 Challenge Activity"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
